@@ -20,7 +20,7 @@ let isInStock = false;
 
 app.listen(port,() => console.log('Server is on port '+ port));
 
-schedule.scheduleJob("*/5 * * * * *", function(){
+schedule.scheduleJob("*/15 * * * * *", function(){
     getInfo().then( );
     console.log('isInStock:' + isInStock);
 });
